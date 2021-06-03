@@ -10,7 +10,7 @@
 	- [AllOrNoneAttribute](#allornoneattribute)
 	- [ZeroOrOneAttribute](#zerooroneattribute)
 - [NuGet](#nuget)
-- [Inspiration And Credit](#inspirationandcredit)
+- [Inspiration And Credit](#inspiration-and-credit)
 
 
 ## What?
