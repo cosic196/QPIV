@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>QPIV.ValidationAttributes</AssemblyName>
+    <RootNamespace>QPIV.ValidationAttributes</RootNamespace>
+    <Authors>cosic196</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Custom validation attributes for Query-Parameters-Interdependency-Validation.</Description>
+    <RepositoryUrl>https://github.com/cosic196/QPIV</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cosic196/QPIV</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
