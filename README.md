@@ -27,7 +27,7 @@ And if you&#39;re building your API in **.NET** then you&#39;re in luck because 
 
 
 ## How To Use
-QPIV gives you access to 5 custom validation:
+QPIV gives you access to 5 custom validation attributes:
 - Requires
 - Or
 - OnlyOne
