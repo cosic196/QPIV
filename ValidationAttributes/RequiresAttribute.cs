@@ -6,11 +6,19 @@ using System.Linq;
 
 namespace QPIV.ValidationAttributes
 {
+    /// <summary>
+    /// Specifies that, given a target parameter and a set of parameters, presence of a targetParameter requires the presence of other parameters..
+    /// </summary>
     public class RequiresAttribute : BaseQpivAttribute
     {
         private readonly string _targetParameterName;
         private bool _foundOne;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RequiresAttribute"/> class.
+        /// </summary>
+        /// <param name="targetParameterName">Name of the parameter which requires the presence of parameters with <paramref name="requiredParameterNames"/>.</param>
+        /// <param name="requiredParameterNames">Names of required parameters.</param>
         public RequiresAttribute(string targetParameterName, params string[] requiredParameterNames) : base(requiredParameterNames.Prepend(targetParameterName).ToArray())
         {
             if(requiredParameterNames.Contains(targetParameterName))

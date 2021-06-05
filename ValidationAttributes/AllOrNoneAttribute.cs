@@ -4,11 +4,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QPIV.ValidationAttributes
 {
+    /// <summary>
+    /// Specifies that, given a set of parameters, either all of them are provided or none.
+    /// </summary>
     public class AllOrNoneAttribute : BaseQpivAttribute
     {
         private bool _foundOne;
         private int _foundCount;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AllOrNoneAttribute"/> class.
+        /// </summary>
+        /// <param name="parameterNames">Names of given parameters.</param>
         public AllOrNoneAttribute(params string[] parameterNames) : base(parameterNames)
         {
             string defaultError = "All or none of: '";

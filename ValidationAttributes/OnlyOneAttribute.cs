@@ -4,10 +4,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QPIV.ValidationAttributes
 {
+    /// <summary>
+    /// Specifies that, given a set of parameters, one and only one of them is required. 
+    /// </summary>
     public class OnlyOneAttribute : BaseQpivAttribute
     {
         private bool _foundOne;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OnlyOneAttribute"/> class.
+        /// </summary>
+        /// <param name="parameterNames">Names of given parameters.</param>
         public OnlyOneAttribute(params string[] parameterNames) : base(parameterNames)
         {
             string defaultError = "Only one of: '";

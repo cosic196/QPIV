@@ -4,10 +4,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QPIV.ValidationAttributes
 {
+    /// <summary>
+    /// Specifies that, given a set of parameters, zero or one can be present.
+    /// </summary>
     public class ZeroOrOneAttribute : BaseQpivAttribute
     {
         private bool _foundOne;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ZeroOrOneAttribute"/> class.
+        /// </summary>
+        /// <param name="parameterNames">Names of given parameters.</param>
         public ZeroOrOneAttribute(params string[] parameterNames) : base(parameterNames)
         {
             string defaultError = "Zero or one of: '";

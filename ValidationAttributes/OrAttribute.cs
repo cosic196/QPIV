@@ -4,8 +4,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace QPIV.ValidationAttributes
 {
+    /// <summary>
+    /// Specifies that, given a set of parameters, one or more of them must be included.
+    /// </summary>
     public class OrAttribute : BaseQpivAttribute
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OrAttribute"/> class.
+        /// </summary>
+        /// <param name="parameterNames">Names of given parameters.</param>
         public OrAttribute(params string[] parameterNames) : base(parameterNames)
         {
             string defaultError = "At least one of: '";
