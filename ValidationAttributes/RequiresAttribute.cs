@@ -64,7 +64,7 @@ namespace QPIV.ValidationAttributes
             {
                 return ValidationResult.Success;
             }
-            return new ValidationResult(ErrorMessage, _parameterNames);
+            return new ValidationResult(ErrorMessage, ValidationResultMemberNames);
         }
     }
 }

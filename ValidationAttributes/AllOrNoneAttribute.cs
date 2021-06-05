@@ -39,7 +39,7 @@ namespace QPIV.ValidationAttributes
             {
                 if(_foundOne)
                 {
-                    return ParameterValidationResult.Error(ErrorMessage, _parameterNames);
+                    return ParameterValidationResult.Error(ErrorMessage, ValidationResultMemberNames);
                 }
             }
             else
@@ -54,7 +54,7 @@ namespace QPIV.ValidationAttributes
         {
             if(_foundCount != 0 && _foundCount < _parameterNames.Length)
             {
-                return new ValidationResult(ErrorMessage);
+                return new ValidationResult(ErrorMessage, ValidationResultMemberNames);
             }
             return ValidationResult.Success;
         }

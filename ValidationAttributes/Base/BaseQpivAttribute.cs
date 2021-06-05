@@ -11,6 +11,7 @@ namespace QPIV.ValidationAttributes.Base
     {
         private Dictionary<string, QpivParameterInfo> _parameters;
         protected readonly string[] _parameterNames;
+        protected IEnumerable<string> ValidationResultMemberNames { get; private set; }
 
         public BaseQpivAttribute(params string[] parameterNames)
         {
@@ -40,6 +41,7 @@ namespace QPIV.ValidationAttributes.Base
             if(_parameters == null)
             {
                 _parameters = value.GetQpivParameters(_parameterNames);
+                ValidationResultMemberNames = _parameters.Select(x => x.Value.ModelName);
             }
 
             foreach (var parameterName in _parameterNames)

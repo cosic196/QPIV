@@ -39,7 +39,7 @@ namespace QPIV.ValidationAttributes
 
         protected override ValidationResult FinalValidation()
         {
-            return new ValidationResult(ErrorMessage, _parameterNames);
+            return new ValidationResult(ErrorMessage, ValidationResultMemberNames);
         }
     }
 }
