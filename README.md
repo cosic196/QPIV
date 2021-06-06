@@ -2,7 +2,7 @@
 
 An extension to the .NET DataAnnotations library with custom validation attributes to solve the most common query parameter interdependencies.
 
-*[FluentValidation](https://fluentvalidation.net/ "FluentValidation") is recommended for more complex and specific validation use cases.*
+*Creating your own custom validation attributes or using [FluentValidation](https://fluentvalidation.net/ "FluentValidation") is recommended for more complex and specific validation use cases. This library covers only the **most common** query parameter interdependencies.*
 
 **QPIV** stands for **Q**uery **P**arameters **I**nterdependency **V**alidation.
 
