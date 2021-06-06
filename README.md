@@ -1,7 +1,17 @@
 # QPIV
 
+An extension to the .NET DataAnnotations library with custom validation attributes to solve the most common query parameter interdependencies.
+
+*[FluentValidation](https://fluentvalidation.net/ "FluentValidation") is recommended for more complex and specific validation use cases.*
+
 **QPIV** stands for **Q**uery **P**arameters **I**nterdependency **V**alidation.
-- [What?](#what?)
+
+
+------------
+
+
+![Build Status](https://github.com/cosic196/QPIV/actions/workflows/ci.yml/badge.svg)
+- [What?](#what)
 - [How To Use](#how-to-use)
 	- [Constraints](#constraints)
 	- [RequiresAttribute](#requiresattribute)
@@ -11,7 +21,6 @@
 	- [ZeroOrOneAttribute](#zerooroneattribute)
 - [NuGet](#nuget)
 - [Inspiration And Credit](#inspiration-and-credit)
-
 
 ## What?
 
@@ -164,6 +173,11 @@ public class InputModel
 ## NuGet
 Install **QPIV.ValidationAttributes** NuGet package from nuget.org to use QPIV custom validation attributes.
 
+```
+dotnet add package QPIV.ValidationAttributes
+```
+
+[![NuGet](https://img.shields.io/nuget/v/QPIV.ValidationAttributes.svg)](https://nuget.org/packages/QPIV.ValidationAttributes)
 
 ## Inspiration And Credit
 OpenAPI doesn&#39;t support specifying these kinds of dependencies.
