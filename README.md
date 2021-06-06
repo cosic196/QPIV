@@ -19,7 +19,7 @@ An extension to the .NET DataAnnotations library with custom validation attribut
 	- [OnlyOneAttribute](#onlyoneattribute)
 	- [AllOrNoneAttribute](#allornoneattribute)
 	- [ZeroOrOneAttribute](#zerooroneattribute)
-- [NuGet](#nuget)
+- [Getting Started](#getting-started)
 - [Inspiration And Credit](#inspiration-and-credit)
 
 ## What?
@@ -170,7 +170,7 @@ public class InputModel
 :heavy_check_mark:An instance of the input model above is valid if all of z, Y and X are null.  
 :heavy_check_mark:An instance of the input model above is valid if all of z, Y and X have values.  
 
-## NuGet
+## Getting Started
 Install **QPIV.ValidationAttributes** NuGet package from nuget.org to use QPIV custom validation attributes.
 
 ```
